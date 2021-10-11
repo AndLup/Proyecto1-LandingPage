@@ -71,8 +71,8 @@ body{
 }
 
 .cont-inicio{
-    width: 90%;
-    height: 75%;
+    width: 100%;
+    height: 80%;
     display: flex;
 
 }
@@ -86,15 +86,77 @@ body{
 
 .cont-textos{
     width: 45%;
-    height: 90%;
+    height: 100%;
+    display: flex;
     margin: auto;
-    box-shadow: 0 0 10px 0 #ffffff;
+    margin-right: 0;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #ffffff;
 }
+
+.cont-textos button{
+    width: 25%;
+    height: 5%;
+    margin: 1rem;
+    border: none;
+    background-color: #151ce9;
+    box-shadow: 0 0 5px 0 #1488CC;
+    color: #ffffff;
+    transition: transform .5s;
+}
+.cont-textos button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.cont-textos h1{
+    font-size: 3.3rem;
+}
+
+.cont-textos p{
+    margin: 1rem;
+}
+
+.registro{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+#input{
+    width: 80%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+#btn{
+    width: 20%;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    margin: auto;
+    background-color: #2B32B2;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: transform .5s;
+}
+#btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
 
 .cont-imagen{
     width: 45%;
     height: 90%;
-    margin: auto;
+    margin: 1rem;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background-image: url(../imgs/casa7.png);
 
