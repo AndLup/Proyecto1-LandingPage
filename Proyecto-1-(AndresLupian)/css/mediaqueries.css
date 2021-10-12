@@ -1,16 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 
-@media (min-width: 350px) AND (max-width: 480px) { 
-  .header{
+
+@media (min-width: 100px) AND (max-width: 480px) { 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+  
+    .header{
       display: none;
   }
 
   .cont-inicio{
       flex-direction: column-reverse;
       height: 100vh;
+  }
+
+  .cont-textos button{
+      font-size: .9rem;
   }
 
   .cont-textos h1{
@@ -23,12 +29,38 @@
   }
 
   .cont-imagen{
-      height: 30%;
+      height: 40%;
   }
 
   .registro #btn{
       font-size: 1rem;
   }
+
+  .registro #input{
+      font-size: 1.7rem;
+  }
+
+  .casas p{
+      font-size: 1.15rem;
+      text-align: center;
+  }
+
+  .casa{
+      width: 45%;
+      height: 20%;
+  }
+
+  .casas{
+      flex-direction: column;
+  }
+  .casas p{
+     position: relative;
+     margin: 0;
+     padding: .3rem;
+  }
+
+  
+
 
 
 }

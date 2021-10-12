@@ -96,15 +96,17 @@ body{
 
 .cont-textos button{
     width: 50%;
+    height: 5%;
+    font-size: 1.2rem;
     border: none;
     background-color: #2B32B2;
-    box-shadow: 0 0 5px 0 #1488CC;
     color: #ffffff;
     transition: transform .5s;
 }
 .cont-textos button:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
     cursor: pointer;
+    box-shadow: 0 0 5px 0 #9ddafd;
 }
 
 .cont-textos h1{
@@ -126,7 +128,7 @@ body{
     border-radius: 5px;
     text-align: center;
     margin: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 #btn{
@@ -142,7 +144,7 @@ body{
 }
 #btn:hover{
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .cont-imagen{
@@ -177,7 +179,8 @@ body{
 .casas p{
     position: absolute;
     color: #ffffff;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    text-shadow: 6px 0px 9px rgba(255,255,255,0.68);
 }
 
 .cont-casas{
@@ -223,26 +226,26 @@ body{
 }
 
 #cs1{
-    background-image: url(../imgs/casa6.png);    
+    background-image: url(../imgs/casa30.png);    
 }
 #cs2{
-    background-image: url(../imgs/casa7.png);    
+    background-image: url(../imgs/casa32.png);    
 }
 #cs3{
-    background-image: url(../imgs/casa12.png);    
-}
-#cs4{
-    background-image: url(../imgs/casa13.png);    
-}
-#cs5{
-    background-image: url(../imgs/casa16.png);    
-}
-#cs6{
-    background-image: url(../imgs/casa20.png);    
-}
-#cs7{
     background-image: url(../imgs/casa7.png);    
 }
-#cs8{
+#cs4{
     background-image: url(../imgs/casa1.png);    
+}
+#cs5{
+    background-image: url(../imgs/casa11.png);    
+}
+#cs6{
+    background-image: url(../imgs/casa18.png);    
+}
+#cs7{
+    background-image: url(../imgs/casa6.png);    
+}
+#cs8{
+    background-image: url(../imgs/casa4.png);    
 }
