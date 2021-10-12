@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 480px) { 
+  .header{
+      display: none;
+  }
+
+  .cont-inicio{
+      flex-direction: column-reverse;
+      height: 100vh;
+  }
+
+  .cont-textos h1{
+    font-size: 2.5rem;
+  }
+
+  .cont-textos p{
+      font-size: 1rem;
+  }
+
+  .cont-imagen{
+      height: 50%;
+  }
+
+  .registro #btn{
+      font-size: 1rem;
+  }
+}
