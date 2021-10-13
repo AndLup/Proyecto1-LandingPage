@@ -175,7 +175,8 @@ body{
 }
 
 .cont-textos h1{
-    font-size: 3.4rem;
+    font-size: 3.3rem;
+    text-align: center;
     text-align: center;
 }
 
@@ -328,8 +329,149 @@ body{
 
 }
 
-.adicionales{
-    width: 100%;
+/*  ----  LIGHT-BOX  ----  */
+
+.img-light-1{
+    position: fixed;
+    z-index: 600;
+    background: rgba(85, 85, 85, 0.5);
+    width: 100vw;
     height: 100vh;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform .5s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+
+.close{
+    position: absolute;
+    top: .5rem;
+    right: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    transition: transform .3s;
+}
+.close:hover{
+    transform: scale(1.2);
+}
+
+.cont-fondo1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 87%;
+    height: 85%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.cont-light{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
+
+.cont-imagenes{
+    display: flex;
+    width: 90%;
+    height: 50%;
+}
+.cont-light h2{
+    margin-top: 1.5rem;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    
+}
+.cont-light p{
+    
+    font-size: 1.5rem;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.foto-light-1{
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 23%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, .5);
+    opacity: .7;
+}
+
+#office1{
+    background-image: url(../imgs/office5.png);
+}
+#office2{
+    background-image: url(../imgs/office3.png);
+}
+#office3{
+    background-image: url(../imgs/office7.png);
+}
+#office4{
+    background-image: url(../imgs/office6.png);
+}
+
+
+/*  ----  SECCION TESTIMONIOS  ----  */
+
+.testimonios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carrusel{
+    width: 55%;
+    height: 70%;
+    border: 2px solid #fcfcfc;
+    margin: auto;
+}
+
+.comentarios{
+    width: 35%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 22%;
+    box-shadow: 0 0 5px 0 #ffffff;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.test img{
+    height: 70%;
+    width: 20%;
+    border-radius: 50%;
+}
+
+.test p{
+    color: #ffffff;
+}
+
+
+
+
