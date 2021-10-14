@@ -31,3 +31,5 @@ contenedorLight.addEventListener('click',(e)=>{
         }
 
 
+/*   CARRUSEL DE IMAGENES*/
+

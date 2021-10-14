@@ -62,8 +62,36 @@
      padding: .3rem;
   }
 
-  
+  .testimonios{
+      flex-direction: column;
+  }
+
+  .carrusel{
+      width: 95%;
+      height: 45%;
+      margin: 1rem;
+  }
+
+  .comentarios{
+    width: 100%;
+  }
+
+  .test{
+      margin: .5rem;
+  }
 
 
 
+
+  .form{
+      width: 100%;
+  }
+
+  .cont-form{
+      width: 100%;
+  }
+
+  .formulario{
+      width: 90%;
+  }
 }
