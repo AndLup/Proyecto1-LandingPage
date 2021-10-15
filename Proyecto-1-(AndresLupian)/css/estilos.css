@@ -432,6 +432,69 @@ body{
 
 /*  ----  SECCION CREDITOS  ----  */
 
+.creditos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-creditos{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txtcred{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.txtcred h2{
+    font-size: 3rem;
+}
+
+.txtcred p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.imagencs{
+    width: 60%;
+}
+
+.imagencs img{
+    width: 100%;
+}
+
+.cont-cred{
+    width: 70%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-cred img{
+    width: 30%;
+    height: 50%;
+    margin: auto;
+    transition: transform .5s;
+}
+
+.cont-cred img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
 
 /*  ----  SECCION NOSOTROS  ----  */
 
@@ -480,6 +543,9 @@ body{
     text-align: center;
 }
 
+
+/*  ----  SECCION FORMULARIO  ----  */
+
 .form{
     
     display: flex;
@@ -500,7 +566,7 @@ body{
 .imagen-registrarse{
     width: 55%;
     height: 95%;
-    background-image: url(../imgs/fam4.png);
+    background-image: url(../imgs/casaiso.png);
     opacity: .8;
     
 }
