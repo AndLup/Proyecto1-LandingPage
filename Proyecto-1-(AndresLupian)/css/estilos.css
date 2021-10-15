@@ -250,7 +250,7 @@ body{
     position: absolute;
     color: #000000;
     font-size: 2.2rem;
-    text-shadow: 6px 0px 9px rgba(77, 77, 77, 0.68);
+    text-shadow: 3px 3px 5px rgba(0, 10, 20, 0.5);
     
 }
 
@@ -267,16 +267,17 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(87, 87, 87, 0.5);
     transform: scale(1);
     transition: transform .5s;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    backdrop-filter: blur(5px);
 }
 .capa h3{
     color: #ffffff;
+    text-shadow: 3px 3px 5px black;;
 }
 
 .capa:hover{
@@ -289,12 +290,13 @@ body{
     height: 30%;
     margin: auto;
     transition: transform .5s;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, .5);
 }
 
 .casa:hover{
     cursor: pointer;
     transform: scale(1.03);
-    box-shadow: 0 0 10px 0 #ffffff;
+    box-shadow: 0 0 20px 0 #020202;
 }
 
 #cs1{
@@ -428,6 +430,55 @@ body{
 }
 
 
+/*  ----  SECCION CREDITOS  ----  */
+
+
+/*  ----  SECCION NOSOTROS  ----  */
+
+.nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-nosotros{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nos{
+    width: 25%;
+    height: 55%;
+    background: #3a7bd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .7);
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.valores{
+    width: 35%;
+    height: 75%;
+}
+
+.nos h2{
+    font-size: 4rem;
+}
+
+.nos p{
+    font-size: 1.4rem;
+    text-align: center;
+}
 /*  ----  SECCION TESTIMONIOS  ----  */
 
 .testimonios{
@@ -436,12 +487,84 @@ body{
     align-items: center;
 }
 .carrusel{
+    position: relative;
     width: 60%;
     height: 70%;
     border: 2px solid #fcfcfc;
     margin: auto;
 }
 
+
+.slides{
+    width: 100%;
+    height: 85%;
+    position: relative;
+    
+}
+
+.img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../imgs/fam2.png);
+    border-radius: 10px;
+    
+}
+
+.slides:target{
+    z-index: 1;
+}
+
+.img1{
+    
+    background-image: url(../imgs/fam2.png);
+    
+}
+.img2{
+    
+    background-image: url(../imgs/fam3.png);
+    
+}
+.img3{
+    
+    background-image: url(../imgs/fam4.png);
+    
+}
+
+.btnslides{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 15%;    
+}
+
+.btn{
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn a{
+    text-decoration: none;
+    width: 20%;
+    height: 50%;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #4286f4;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 0 #ffffff;
+    transition: transform .5s;
+}
+
+.btn a:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 .comentarios{
     width: 35%;
@@ -481,11 +604,27 @@ body{
     align-items: center;
 }
 
+.registrar{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.imagen-registrarse{
+    width: 55%;
+    height: 95%;
+    background-image: url(../imgs/fam4.png);
+    opacity: .8;
+    
+}
 
 
 .cont-form{
-    width: 45%;
-    height: 70%;
+    width: 70%;
+    height: 80%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -494,14 +633,15 @@ body{
 
 
 .formulario{
-    width: 70%;
+    width: 45%;
     height: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, .3);
-    backdrop-filter: blur(25px);border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
 }
 
 .formulario h2{
@@ -510,15 +650,17 @@ body{
 
 }
 .formulario input{
-    width: 70%;
+    width: 85%;
     height: 2rem;
     border-radius: 10px;
     border: none;
     text-align: center;
-    margin: 1rem;
+    margin: .5rem;
     font-size: 1.3rem;
 }
-
+#mensaje{
+    height: 6rem;
+}
 #btn-registrar{
     width: 40%;
     transition: transform .5s;
@@ -547,7 +689,41 @@ body{
 }
 
 .info{
+    border-top: 2px solid #4286f4;
     width: 30%;
     height: 95%;
     margin: auto;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info a{
+    text-decoration: none;
+    margin: .5rem;
+    color: #2B32B2;
+}
+
+.info a:hover{
+    border-bottom: 2px solid #4286f4;
+}
+
+.cont-redes{
+    width: 80%;
+    height: 70%;
+    display: flex;
+}
+
+.cont-redes img{
+    width: 20%;
+    height: 30%;
+    border-radius: 50%;
+    margin: auto;
+    transition: transform .5s;
+}
+
+.cont-redes img:hover{
+    transform: scale(1.15);
+    cursor: pointer;
 }
