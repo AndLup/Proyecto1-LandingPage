@@ -712,3 +712,9 @@ body{
     transform: scale(1.15);
     cursor: pointer;
 }
+
+#pie{
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+}
