@@ -483,7 +483,7 @@ body{
 }
 
 .cont-cred img{
-    width: 30%;
+    width: 20%;
     height: 50%;
     margin: auto;
     transition: transform .5s;
@@ -492,6 +492,11 @@ body{
 .cont-cred img:hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+
+#cred1{
+    width: 30%;
+    margin: 0;
 }
 
 
@@ -515,10 +520,6 @@ body{
 .nos{
     width: 25%;
     height: 55%;
-    background: #3a7bd5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, .7);
     border-radius: 50%;
     margin: auto;
@@ -527,11 +528,45 @@ body{
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    position: relative;
+    
+}
+
+.capa1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.capa1:hover{
+    transform: scale(0);
+    cursor: pointer;
+}
+.vision{
+    background-image: url(../imgs/mvv3.png);
 }
 
 .valores{
     width: 35%;
     height: 75%;
+}
+#valores{
+    background-color: rgba(255, 255, 255, 0.7);
+    background-image: url(../imgs/mvv1.png);
+}
+#mision{
+    background-color: rgba(255, 255, 255, .7);
+    background-image: url(../imgs/mvv2.png);
+}
+#vision{
+    background-color: rgba(255, 255, 255, .7);
+    background-image: url(../imgs/mvv3.png);
 }
 
 .nos h2{
