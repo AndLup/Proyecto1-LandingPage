@@ -61,12 +61,39 @@
      padding: .3rem;
   }
 
+.capa h3{
+    font-size: 1.5rem;
+}
+
+
+
+.cont-fondo1{
+    height: 80%;
+}
+
+.close{
+    width: 3rem;
+}
+
   .cont-light h2{
+      margin: .5rem;
       font-size: 2.5rem;
   }
   .cont-light p{
     font-size: 1.3rem;
-    padding: 1rem;
+    margin: 0;
+  }
+
+  .cont-imagenes{
+      width: 100%;
+      height: 50%;
+      flex-wrap: wrap;
+  }
+
+  .cont-imagenes .foto-light-1{
+    width: 45%;
+    height: 45%;
+    margin: auto;
   }
 
 
@@ -74,18 +101,20 @@
       flex-direction: column;
   }
 
+  .capa1{
+      border-radius: 5%;
+  }
   .nos{
       border-radius: 10%;
       width: 80%;
-      height: 30%;
+      height: 28%;
   }
 
-  .nos h2{
-      font-size: 2rem;
-  }
+  
 
   .nos p{
       font-size: 1.3rem;
+      user-select: none;
   }
 
   .valores p{
@@ -145,6 +174,11 @@
   }
 
   .cont-redes img{
-      width: 50%;
+      width: 35%;
+      height: 35;
+  }
+
+  #pie{
+      font-size: 1rem;
   }
 }

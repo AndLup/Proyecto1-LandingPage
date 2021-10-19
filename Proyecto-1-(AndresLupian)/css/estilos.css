@@ -241,9 +241,12 @@ body{
 .casas{
     width: 100%;
     height: 100vh;
- display: flex;
- justify-content: center; 
- align-items: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url(../imgs/casaiso1.png);
+    
 }
 
 .casas p{
@@ -494,10 +497,7 @@ body{
     cursor: pointer;
 }
 
-#cred1{
-    width: 30%;
-    margin: 0;
-}
+
 
 
 
@@ -542,6 +542,8 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
 }
 
 .capa1:hover{
@@ -557,21 +559,19 @@ body{
     height: 75%;
 }
 #valores{
-    background-color: rgba(255, 255, 255, 0.7);
+    
     background-image: url(../imgs/mvv1.png);
 }
 #mision{
-    background-color: rgba(255, 255, 255, .7);
+    
     background-image: url(../imgs/mvv2.png);
 }
 #vision{
-    background-color: rgba(255, 255, 255, .7);
+    
     background-image: url(../imgs/mvv3.png);
 }
 
-.nos h2{
-    font-size: 4rem;
-}
+
 
 .nos p{
     font-size: 1.4rem;
