@@ -166,6 +166,9 @@
   }
 
 
+  .info a{
+    font-size: 1rem;
+  }
   .info p{
       display: none;
   }
